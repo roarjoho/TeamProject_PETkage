@@ -202,8 +202,8 @@
                             </div>
                         </div>
                     </div>
-                   <div class="filter-widget">
-                        <h4 class="fw-title">Price</h4> 이거 어디서 땡겨온거같은데 필터째로 어디서 떼올것
+<!--                    <div class="filter-widget">
+                        <h4 class="fw-title">Price</h4>
                         <div class="filter-range-wrap">
                             <div class="range-slider">
                                 <div class="price-input">
@@ -219,7 +219,8 @@
                             </div>
                         </div>
                         <a href="#" class="filter-btn">Filter</a>
-                    </div>
+                    </div> -->
+                    <!-- 슬라더의 경우 webapp/js/main.js 파일에 소스가 들어있음 ₩기호를 인식하지 못 하는 문제가 있음-->
                     <div class="filter-widget">
                         <h4 class="fw-title">Size</h4>
                         <div class="fw-size-choose">
