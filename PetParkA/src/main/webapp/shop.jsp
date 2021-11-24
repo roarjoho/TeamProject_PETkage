@@ -202,6 +202,7 @@
                             </div>
                         </div>
                     </div>
+                    슬라이더 있던 자리
 <!--                    <div class="filter-widget">
                         <h4 class="fw-title">Price</h4>
                         <div class="filter-range-wrap">
