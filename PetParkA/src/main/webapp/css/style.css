@@ -347,6 +347,7 @@ ol {
 	font-size: 16px;
 	color: #252525;
 	float: left;
+	border-right: 1px solid #E5E5E5;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	padding-right: 20px;
@@ -375,9 +376,13 @@ ol {
 }
 
 .header-top .ht-right .login-panel {
+	float: right;
 	font-size: 14px;
 	color: #252525;
 	display: inline-block;
+	padding-left: 20px;
+	padding-top: 18px;
+	padding-bottom: 15px;
 }
 
 .header-top .ht-right .login-panel i {
@@ -395,6 +400,7 @@ ol {
 	padding-right: 20px;
 	padding-top: 15px;
 	padding-bottom: 15px;
+	border-right: 1px solid #e5e5e5;
 }
 
 .header-top .ht-right .top-social a {
@@ -671,7 +677,7 @@ ol {
 	color: #ffffff;
 	right: 20px;
 	top: 13px;
-	content: "�꼪";
+	content: "";
 	font-family: FontAwesome;
 	font-size: 18px;
 }
@@ -1689,7 +1695,7 @@ ol {
 	position: absolute;
 	right: -18px;
 	top: 0px;
-	content: "�꼨";
+	content: "";
 	font-family: "FontAwesome";
 	font-size: 16px;
 	color: #b2b2b2;
@@ -3720,7 +3726,7 @@ ol {
 
 .faq-accordin .card-heading a:after,
 .faq-accordin .card-heading>a.active[aria-expanded=false]:after {
-	content: "�겎";
+	content: "";
 	font-family: "FontAwesome";
 	font-size: 14px;
 	color: #404040;
@@ -3737,7 +3743,7 @@ ol {
 
 .faq-accordin .card-heading a[aria-expanded=true]:after,
 .faq-accordin .card-heading>a.active:after {
-	content: "�겏";
+	content: "";
 	font-family: "FontAwesome";
 	float: left;
 	font-size: 13px;

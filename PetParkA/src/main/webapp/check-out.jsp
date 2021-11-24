@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
-<html lang="UTF-8">
+<html lang="zxx">
 
 <head>
     <meta charset="UTF-8">
@@ -25,8 +25,6 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-
-<body>
     <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
@@ -39,8 +37,8 @@
                 <div class="ht-left">
                 </div>
                 <div class="ht-right">
-                    <a href="#" class="login-panel"><i class="fa fa-user"></i>Login</a>
                     <a href="#" class="login-panel"></i>Join</a>
+                    <a href="#" class="login-panel"><i class="fa fa-user"></i>Login</a>
                 </div>
             </div>
         </div>
@@ -113,8 +111,18 @@
         </div>
         <div class="nav-item">
             <div class="container">
-            <!-- 171번줄과 같은 문제로 이쪽에 있던 메뉴를 강제로 이사시킴  -->
- 
+                <div class="nav-depart">
+                    <div class="depart-btn">
+                        <i class="ti-menu"></i>
+                        <span>스토어</span>
+                        <ul class="depart-hover">
+                            <li><a href="#">간식</a></li>
+                            <li><a href="#">케어용품</a></li>
+                            <li><a href="#">장난감</a></li>
+                            <li><a href="#">기획전</a></li>
+                        </ul>
+                    </div>
+                </div>
                 <nav class="nav-menu mobile-menu">
                     <ul>
                         <li class="active"><a href="./index.html">Home</a></li>
@@ -126,14 +134,8 @@
                                 <li><a href="#">이벤트</a></li>
                             </ul>
                         </li>
-                        <li><a href="./shop.html">스토어</a>
-                            <ul class="dropdown">
-	                        	<li><a href="#">간식</a></li>
-	                        	<li><a href="#">케어용품</a></li>
-	                        	<li><a href="#">장난감</a></li>
-	                        	<li><a href="#">기획전</a></li>
-                        	</ul>
-                       	</li> 	
+                        <li><a href="#">기능구현</a>
+                        </li>
                         <li><a href="./blog.html">이건뭐하지</a></li>
                         <li><a href="./contact.html">고객지원</a></li>
                         <li><a href="#">사이트맵드롭다운</a>
@@ -152,12 +154,18 @@
             </div>
         </div>
     </header>
+    <!-- Header End -->
 
     <!-- Breadcrumb Section Begin -->
     <div class="breacrumb-section">
         <div class="container">
             <div class="row">
-
+                <div class="col-lg-12">
+                    <div class="breadcrumb-text product-more">
+                        <a href="./index.html"><i class="fa fa-home"></i> Home</a>
+                        <a href="./shop.html">스토어</a>
+                        <span>결제페이지</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -167,8 +175,6 @@
     <!-- Shopping Cart Section Begin -->
     <section class="checkout-section spad">
         <div class="container">
-        
-        <!-- 이쪽에 카테고리를 넣으면 자꾸 글씨가 깨지는데 원인은 아직 확인하지 못함 -->
             <form action="#" class="checkout-form">
                 <div class="row">
                     <div class="col-lg-6">

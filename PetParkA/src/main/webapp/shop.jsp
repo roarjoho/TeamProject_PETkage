@@ -38,8 +38,8 @@
                 <div class="ht-left">
                 </div>
                 <div class="ht-right">
-                    <a href="#" class="login-panel"><i class="fa fa-user"></i>Login</a>
                     <a href="#" class="login-panel"></i>Join</a>
+                    <a href="#" class="login-panel"><i class="fa fa-user"></i>Login</a>
                 </div>
             </div>
         </div>
@@ -156,7 +156,19 @@
         </div>
     </header>
     <!-- Breadcrumb Section Begin -->
-
+    <div class="breacrumb-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-text product-more">
+                        <a href="./index.html"><i class="fa fa-home"></i> Home</a>
+                        <a href="./shop.html">스토어</a>
+                        <span>상품??(소분류 넣으면 될듯)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Product Shop Section Begin -->
     <section class="product-shop spad">
         <div class="container">
