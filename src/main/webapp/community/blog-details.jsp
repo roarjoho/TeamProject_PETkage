@@ -64,7 +64,7 @@
                     <div class="blog-details-inner">
                         <div class="blog-detail-title">
                             <h4>공원 잔디에서 뒹군다고 신난 울 강쥐 ㅋㅋㅋㅋ</h4>
-                            <p>멍친구 
+                            <p><i class="far fa-grin-hearts"></i>멍친구 
 	                            <span>조회수 10회</span> &nbsp;
 	                            <span>2021. 11. 27. 13:11</span>
                             </p>
