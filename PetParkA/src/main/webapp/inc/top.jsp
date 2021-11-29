@@ -5,8 +5,8 @@
         <div class="header-top">
             <div class="container">               
                 <div class="ht-right">
-                	<a href="../member/register.jsp" class="login-panel"><i class="fa fa-user"></i>회원가입</a>
                     <a href="../member/login.jsp" class="login-panel"><i class="fa fa-user"></i>로그인</a>                
+                	<a href="../member/register.jsp" class="join-panel">│&nbsp;&nbsp;회원가입</a>
                 </div>
             </div>
         </div>
@@ -22,9 +22,8 @@
                     </div>
                     <div class="col-lg-7 col-lg-7">
                         <div class="advanced-search">
-                            <button type="button" class="category-btn">카테고리</button>
                             <form action="#" class="input-group">
-                                <input type="text" placeholder="What do you need?">
+                                <input type="text" placeholder="통합 검색">
                                 <button type="button"><i class="ti-search"></i></button>
                             </form>
                         </div>
@@ -81,7 +80,6 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="cart-price">$150.00</li>
                         </ul>
                     </div>
                 </div>
@@ -92,7 +90,7 @@
                 <div class="nav-depart">
                     <div class="depart-btn">
                         <i class="ti-menu"></i>
-                        <span>전체 카테고리</span>
+                        <span>카테고리</span>
                         <ul class="depart-hover">
                             <li class="active"><a href="#">간식</a></li>
                             <li><a href="#">케어용품</a></li>
@@ -104,7 +102,7 @@
                 <nav class="nav-menu mobile-menu">
                     <ul>
                         <li><a href="../index.html">메인</a></li>
-                        <li><a href="../shop/shop.jsp">Shop</a></li>
+                        <li><a href="../shop/shop.jsp">스토어</a></li>
                         <li><a href="#">상점</a>
                             <ul class="dropdown">
                                 <li><a href="#">댕냥경험기</a></li>
@@ -115,14 +113,14 @@
                         </li>
                         <li><a href="../community/blog.jsp">커뮤니티</a></li>
                         <li><a href="../shop/contact.jsp">고객지원</a></li>
-                        <li><a href="#">사이트맵(?)</a>
+                        <li><a href="#">사이트맵</a>
                             <ul class="dropdown">
                                 <li><a href="./blog-details.html">기능</a></li>
                                 <li><a href="./shopping-cart.html">장바구니</a></li>
-                                <li><a href="./check-out.html">결제</a></li>
-                                <li><a href="./faq.html">구현</a></li>
-                                <li><a href="./register.html">회원정보</a></li>
-                                <li><a href="./login.html">로그인</a></li>
+                                <li><a href="./check-out.html">구매하기</a></li>
+                                <li><a href="./faq.html">자주 묻는 질문</a></li>
+                                <li><a href="./register.html">비회원 로그인</a></li>
+                                <li><a href="./login.html">회원 로그인</a></li>
                             </ul>
                         </li>
                     </ul>
