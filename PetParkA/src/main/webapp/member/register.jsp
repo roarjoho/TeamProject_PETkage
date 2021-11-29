@@ -8,7 +8,7 @@
     <meta name="keywords" content="Fashi, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fashi | Template</title>
+    <title>회원가입</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
@@ -23,6 +23,23 @@
     <link rel="stylesheet" href="../css/jquery-ui.min.css" type="text/css">
     <link rel="stylesheet" href="../css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="../css/style.css" type="text/css">
+    
+    <!-- 제이쿼리 -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">    
+		$(document).ready(function(){
+		//아이디 중복확인
+			$('#user_id_check').click(function() {
+				$.ajax('idCheck.jsp',{
+					data:{user_id:$('#user_id').val()},
+					success:function(rdata){
+						$('#idmsg').html(rdata);
+					}
+				});
+			});	
+		});
+	 
+    </script>
 </head>
 
 <body>
@@ -30,11 +47,11 @@
     <div id="preloder">
         <div class="loader"></div>
     </div>
-
+    
    	<!-- Header Section Begin -->
     	<jsp:include page="../inc/top.jsp"></jsp:include>
     <!-- Header Section Begin -->
-
+    
     <!-- Breadcrumb Section Begin -->
     <div class="breacrumb-section">
         <div class="container">
@@ -58,58 +75,54 @@
                     <div class="register-form">
                         <h2>회원가입</h2>
                         
-                        <form action="#">
-                            <div class="group-input">
-                                <label for="userId">아이디 *</label>
-                                <input type="text" id="userId" placeholder="공백 없는 영문/숫자 포함 6~20자">
-                            </div>
-                            
-                            <div class="group-input">
-                                <label for="pass">비밀번호 *</label>
-                                <input type="password" id="pass">
-                            </div>
-                            
-                            <div class="group-input">
-                                <label for="con-pass">비밀번호 확인 *</label>
-                                <input type="password" id="con-pass">
-                            </div>
-                            
-                             <div class="group-input">
-                                <label for="username">이름 *</label>
-                                <input type="text" id="username">
-                            </div>
-                            
-                            <div class="group-input">
-                                <label for="nickname">닉네임 *</label>
-                                <input type="text" id="nickname" placeholder="공백 없는 문자 최대 6자">
-                            </div>
-                            
-                             <div class="group-input">
-                                <label for="email">이메일 *</label>
-                                <input type="text" id="email" placeholder="@를 포함해주세요 어쩌구">
-                            </div>
-                            <h5>메일수신 동의하는 체크박스 자리</h5>
-                            
-                            
-                             <div class="group-input">
-                                <label for="phone">휴대폰번호 *</label>
-                                <input type="text" id="phone" placeholder="-포함/제외 여부는 구현방식에 따라 알아서 정하기"><button>SMS인증</button>
-                            </div>
-                             <h5>문자수신 동의하는 체크박스 자리</h5>
-                            
-                            
-                             <h5>약관동의서 넣는 자리</h5>
-                            
-                            
-                            <button type="submit" class="site-btn register-btn">입력 완료</button>
-                        </form>
-                        
-                        <h5>다른방법으로 회원가입하는 api 넣기 (구글, 네이버아이디 사용 등)</h5>
-                                                
                         <div class="switch-login">
-                            <a href="./login.html" class="or-login">이미 회원가입을 하셨다면 로그인하기</a>
-                        </div>
-                       
+                            <h5>이미 펫키지 회원이신가요?</h5> <a href="./login.jsp" class="or-login">로그인</a> 
+                        </div><br>
+                        
+                        <form action="registerPro.jsp" method="post">
+                            <div class="group-input">
+                                <label for="user_id">아이디 *</label>
+                                <input type="text" id="user_id" name="user_id">
+                                <input type="button" id="user_id_check" value="아이디 중복확인">
+                                <div id="idmsg"><br></div>
+                            </div>
+                            
+                            <div class="group-input">
+                                <label for="user_pwd">비밀번호 *</label>
+                                <input type="password" id="user_pwd" name="user_pwd" onkeyup="pwdRegex()" placeholder="영문/숫자/특수문자 중 두가지를 포함한 8~20자를 입력해주세요.">
+                           		<div id="pwd1"></div><br>
+                            </div>
+                            
+                            <div class="group-input">
+                                <label for="pass_check">비밀번호 확인 *</label>
+                                <input type="password" id="pass_check" name="pass_check" onkeyup="pwdCheck()">
+                                <div id="pwd2"></div><br>
+                            </div>
+                            
+                             <div class="group-input">
+                                <label for="user_name">이름 *</label>
+                                <input type="text" id="user_name" name="user_name">
+                            </div>                            
+                      
+                            <div class="group-input">
+                                <label for="user_phone">휴대폰번호 *</label>
+                                <input type="text" id="user_phone" name="user_phone" placeholder="- 를 제외하고 입력해주세요.">
+                                <input type="button" id="sms" value="SMS 인증">
+                            </div>                            
+                             
+                             <div class="group-input">
+                                <label for="user_email">이메일 *</label>
+                                <input type="text" id="user_email" name="user_email" placeholder="@를 포함해주세요 어쩌구">
+                            </div>                                                                          
+                            
+                        	<h5><input type="checkbox"> 이용약관 동의(필수) <button>내용보기</button></h5>
+                         	<h5><input type="checkbox"> 개인정보 수집 및 이용 동의(필수) <button>내용보기</button></h5>
+                            <h5><input type="checkbox"> 이벤트 및 프로모션 메일 수신 동의(선택) <button>내용보기</button> </h5>                 
+                          
+                            <button type="submit" class="site-btn register-btn" id="submitBtn">회원 가입</button>
+                        </form>                        
+                                                
+                                             
                     </div>
                 </div>
             </div>
@@ -132,6 +145,38 @@
     <script src="../js/jquery.slicknav.js"></script>
     <script src="../js/owl.carousel.min.js"></script>
     <script src="../js/main.js"></script>
+        
+    <script type="text/javascript">
+    //1. 비밀번호 정규표현식 검사
+    function pwdRegex(){
+    	var pwd = document.getElementById("user_pwd").value;    	
+    	var num = pwd.search(/[0-9]/g);
+    	var eng = pwd.search(/[a-z]/ig);
+    	var spe = pwd.search(/[`~!@@#$%^&*|₩₩₩'₩";:₩/?]/gi);
+    	const pwdMsg = document.getElementById("pwd1");
+    	
+    	if(pwd.length < 8 || pwd.length > 20){
+    		pwdMsg.innerHTML = "8자리 ~ 20자리 이내로 입력해주세요." ;
+    	  return false;
+    	 }else if(pwd.search(/\s/) != -1){
+    		 pwdMsg.innerHTML = "비밀번호는 공백 없이 입력해주세요.";
+    	  return false;
+    	 }else if((num < 0 && eng < 0) || (eng < 0 && spe < 0) || (spe < 0 && num < 0)){
+    		 pwdMsg.innerHTML = "영문,숫자, 특수문자 중 2가지 이상을 혼합하여 입력해주세요.";
+    	  return false;
+    	 }else {
+    		pwdMsg.innerHTML = "사용할 수 있는 비밀번호입니다.";
+    	    return true;
+    	 }   	
+    }
+    
+    //2. 비밀번호 일치 확인
+    function pwdCheck(){
+    	
+    }
+    
+    </script> 
+     
 </body>
 
 </html>

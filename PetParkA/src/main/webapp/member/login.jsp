@@ -86,10 +86,10 @@
                          
                          <h5>SNS 간편 로그인</h5>
                          <div>
-                         	<button type="button" class="site-btn login-btn">네이버로 로그인</button>
+                         	<button type="button" class="site-btn login-btn">네이버 계정으로 사용하기</button>
                          </div>
                           <div>
-                         	<button type="button" class="site-btn login-btn">구글계정으로 로그인</button>
+                         	<button type="button" class="site-btn login-btn">카카오 계정으로 사용하기</button>
                          </div>
                     </div>
                 </div>
