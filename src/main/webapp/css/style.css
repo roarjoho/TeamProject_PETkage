@@ -338,6 +338,7 @@ ol {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+/* 	top: 0; */
 }
 
 .header-top .ht-left {
@@ -429,7 +430,7 @@ ol {
 }
 
 .inner-header .advanced-search {
-	max-width: 60%;
+	max-width: 70%;
 	height: 45px;
 	border: 1px solid #E8E8E8;
 	border-radius: 5px;
@@ -686,6 +687,7 @@ ol {
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
 }
+
 
 .nav-item .nav-depart {
 	float: left;
@@ -1776,6 +1778,7 @@ ol {
 -----------------------*/
 
 .breadcrumb-text {
+/* 	border-bottom: 1px solid #ebebeb; */
 	padding: 15px 0;
 }
 
@@ -1808,6 +1811,8 @@ ol {
 	font-size: 15px;
 	display: inline-block;
 	color: #b2b2b2;
+	padding-top: -1px;
+	/* 위치 어떤지 확인 */
 	
 }
 
@@ -1829,6 +1834,34 @@ ol {
 	padding: 10px 14px 10px;
 }
 
+
+/*---------------------
+  Search-title
+-----------------------*/
+.search-text {
+	border-bottom: 1px solid #ebebeb;
+	padding: 15px 0;
+	margin-bottom: 20px;
+}
+
+.search-text span {
+	font-size: 15px;
+	display: inline-block;
+	color: #6a6a6a;
+	padding-top: -1px;
+	/* 위치 어떤지 확인 */
+	
+}
+
+.search-text a {
+	display: inline-block;
+	margin-right: 5px;
+	position: relative;
+	color: #72E15E;
+	float: right;
+	font-size: 15px;
+	font-weight: 800;
+}
 
 /*---------------------
   Product Shop
